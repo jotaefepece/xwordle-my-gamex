@@ -1,0 +1,277 @@
+:root {
+  --bg-main: #f9f9f9;        
+  --text-main: #333;
+  --correcto: #2ecc71;     
+  --presente: #f1c40f;      
+  --ausente: #7f8c8d;        
+  --border: #333;
+  --button-blue: #3498db;
+  --button-green: #27ae60;
+  --button-orange: #e67e22;
+  --mensaje: #d35400;;
+}
+
+.contenedor {
+  max-width: 900px;               
+  margin: 4px auto;
+  padding: 20px;
+  background: #F7856D;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #000000;
+}
+
+h1 {
+  margin: 0 0 18px;
+  color: #000004;
+  text-align: center;         
+  width: 100
+}
+
+.barra {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.barra button,
+.editor button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.barra button {
+  background: #21100D;
+  color: white;
+}
+
+.barra button:hover {
+  background: #d35400;
+}
+
+.editor {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.editor button {
+  background: #21100D;
+  color: white;
+  display: flex;
+}
+
+.editor button:hover {
+  background: #d35400;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .main-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .juego-left {
+    flex: 1;
+    max-width: 450px;           /* Ancho fijo para el tablero */
+  }
+  
+  .sidebar-right {
+    flex: 1;
+    min-width: 320px;
+    padding-left: 30px;
+  }
+}
+
+.tablero {
+  margin: 20px 0;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+}
+
+.celda {
+  width: 60px;
+  height: 40px;
+  margin: 4px;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: white;           
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.correcto {
+  background: #22c55e;     /* verde Wordle */
+  color: #ffffff;
+  border-color: #22c55e;
+}
+
+.presente {
+  background: #eab308;     /* amarillo Wordle */
+  color: #ffffff;         /* blanco para contraste */
+  border-color: #eab308;
+}
+
+.ausente {
+  background: #6b7280;     /* gris Wordle */
+  color: #ffffff;
+  border-color: #6b7280;
+}
+
+
+
+.entrada {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.entrada input {
+  padding: 10px;
+  font-size: 20px;
+  width: 160px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  transition: border 0.2s;
+}
+
+.entrada input:focus {
+  border-color: var(--button-blue);
+  outline: none;
+}
+
+.entrada button {
+  padding: 10px 12px;
+  background: #21100D;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.entrada button:hover {
+  background: #d35400;
+}
+
+.editor textarea {
+  width: 60%;
+  height: 40px;
+  padding: 12px;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.manual {
+  text-align: left;
+  background: #f0f4f8;
+  padding: 08px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #d1d9e0;
+}
+
+.indicador {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 06px 0;
+  color:  #21100D;
+  text-align: center;  
+}
+.mensaje {
+  margin: 1px 0;
+  margin-left: 1px;   
+  font-weight: bold;
+  font-size: 16px;
+  color: yellow;
+  min-height: 12px;
+  text-align: center;
+  max-width: 600px;
+}
+
+
+.ranking {
+  max-width: 320px;
+  margin-top: 25px;
+  padding: 18px;
+  background: #e8f4f8;
+  border-radius: 8px;
+  border: 1px solid #b3e0ea;
+  text-align: left;
+}
+
+.ranking h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #21100D;
+}
+
+.ranking ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.ranking li:last-child {
+  border-bottom: none;
+}
+
+.resultado-final {
+  max-width: 320px;
+  margin-top: 25px;
+  padding: 18px;
+  background: #e8f4f8;
+  border-radius: 8px;
+  border: 1px solid #b3e0ea;
+  text-align: center;
+}
+
+.resultado-final h2 {
+  margin: 0 0 08px;
+  color: #21100D;
+}
+
+.resultado-final p {
+  margin: 08px 0;
+  font-size: 20px;
+}
+
+button {
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.94);
+}
