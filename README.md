@@ -1,9 +1,13 @@
 # Wordle my Game
 
 Aplicación web desarrollada en Angular como ejercicio práctico de aprendizaje.
+Esta actividad corresponde además a una tarea optativa del curso “Lado del 
+Cliente (Front-End) y Multimedia”, dentro del programa de mis estudios actuales.
+
 El proyecto consiste en una versión simplificada del clásico juego tipo Wordle, 
 donde el usuario debe adivinar palabras de cinco letras en un número limitado de 
-intentos.
+intentos, incorporando validación por posición, estilos dinámicos y gestión de 
+estado en el lado del cliente.
 
 ---
 
@@ -33,8 +37,7 @@ Este trabajo fue desarrollado con fines académicos para:
 
 - Desplegar la aplicación en GitHub Pages.
 
-- Además es parte de una tarea para **LADO DEL CLIENTE (FRONT-END) Y MULTIMEDIA**
-
+- Además, es parte de una tarea...
 
 ---
 
