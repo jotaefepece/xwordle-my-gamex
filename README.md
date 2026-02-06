@@ -17,21 +17,24 @@ intentos.
 ---
 
 
-## Objetivo del proyecto
+## Objetivo del Ejercicio
 
-Este proyecto fue desarrollado con fines académicos para:
+Este trabajo fue desarrollado con fines académicos para:
 
-Practicar la estructura de un proyecto Angular standalone.
+- Practicar la estructura de un proyecto Angular standalone.
 
-Implementar lógica de juego basada en validación por posiciones.
+- Implementar lógica de juego basada en validación por posiciones.
 
-Gestionar estado de sesión con múltiples palabras.
+- Gestionar estado de sesión con múltiples palabras.
 
-Aplicar estilos dinámicos con clases condicionales.
+- Aplicar estilos dinámicos con clases condicionales.
 
-Implementar un pequeño sistema de ranking por tiempo.
+- Implementar un pequeño sistema de ranking por tiempo.
 
-Desplegar la aplicación en GitHub Pages.
+- Desplegar la aplicación en GitHub Pages.
+
+- Además es parte de una tarea para **LADO DEL CLIENTE (FRONT-END) Y MULTIMEDIA**
+
 
 ---
 
