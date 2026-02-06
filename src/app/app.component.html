@@ -4,7 +4,8 @@
   <div class="barra">
     <button (click)="mostrarManual = !mostrarManual">Manual</button>
     <button (click)="mostrarEditor = !mostrarEditor">Editor de Palabras</button>
-	<button (click)="iniciarSesion()">Reiniciar</button>
+	<button (click)="iniciarSesionPorDefecto()">Reiniciar</button>
+
   </div>
 
 <div *ngIf="mostrarManual" class="manual">
